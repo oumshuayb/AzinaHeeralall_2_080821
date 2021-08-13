@@ -1,0 +1,346 @@
+/* POlice utilisés nommé raleway*/
+
+    /* haut de ma page */
+
+    /*header*/
+
+    #titre_principal{
+      display: flex;
+    }
+
+.logo_reservia img 
+{
+  height: 70%;
+  width: 150px;
+}
+
+.logo-info {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #0065FC;
+}
+
+  h1
+{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+header h2 {
+
+  font-family: 'raleway';
+  font-weight: 500;
+}
+nav 
+{
+  flex: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+nav a /* reste a faire alignement au meme niveau que titre */
+{
+  flex: auto;
+  display: inline-flex;
+  justify-content: space-evenly;
+   display: flex;
+   justify-content: flex-end;
+   font-weight: normal;
+   font-family: 'Raleway', sans-serif;
+   font-weight:700;
+   font-size: 0.8em;
+}
+ 
+a:hover /* Apparence au survol des liens */
+
+{
+   text-decoration: none;
+   color:#0065FC; 
+}
+
+
+h2
+
+{
+  font-family: 'Raleway', sans-serif;
+  font-weight:500;
+}
+
+     
+.fas fa-map-marker-alt/* concerne icone maps , quel denomination pour changer la fond de maps */
+{
+  background-size: 20px;
+  background-color: #F2F2F2 ; 
+  text-align:center;
+  margin-right: 20px;
+  color: black;
+ 
+}
+
+h1,h2 
+
+{ /* pour remonte les titre vers le haut */
+
+  top: 50px;
+}
+
+.button-maps {
+  
+  font-family: 'raleway'; 
+  font-weight: 800;
+  font-size: 0.8em;
+  border-color: lightgray;
+    border-style: solid;
+    padding: 6px;
+}
+
+h5 {
+  
+  font-size: 0.7em;
+  padding: 10px;
+  font-family:'Raleway';
+  font-weight: 500;
+  font-style: normal;
+  
+  
+  }
+.recherche {
+
+  color: white;
+  font-family: 'raleway';
+  font-weight: 700;
+  font-style: normal;
+  background-color: #0065FC;
+  border-radius: 40px;
+  border-right: none;
+  border-left-style: none;
+  line-height: 50%;
+  text-align :justify;
+ 
+}
+  #conteneur/*concerne icon maps avec marseille dans cadre et rechercher submit*/
+{
+
+  display: flex;
+  border-collapse: collapse;
+
+}
+
+ #filtres {
+ 
+  font-family: 'raleway'; 
+  font-weight: 800;
+  font-size: 0.8em;
+
+ /* padding: 30px;
+  justify-content: flex-start;
+  margin-right: 150px;*/
+  
+  
+}
+
+.logo-button { /*correspond a mes icons animaux romance ect..*/
+  
+  color: #0065FC;
+  background-color:#DEEBFF;
+  size: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  border-right: none;
+    
+}
+.button-filtre { /*iconn+texte*/
+    
+  font-family: 'raleway'; 
+  font-weight: 800;
+  font-size: 0.9em;
+background-color: white;
+border-color: lightgrey;
+    border-style: solid;
+    border-radius: 100px;
+    padding: 10px;
+
+  }
+
+
+
+#logo-info {
+
+  display: flex;
+}
+
+  /*partie herbergement*/
+  
+section {
+
+  
+  background-color: #F2F2F2  ;
+  flex-direction: row-reverse;
+  justify-content: center;
+  box-shadow: 10px 10px 10px white;
+  border-radius: 20px;
+     
+}
+
+.nuit{/* javais mis . pour class enfaite c diese pr ID*/
+font-family:'raleway';
+font-weight: 500;
+margin-top: 5px;
+}
+
+figure 
+{
+box-shadow: 0px 1px 3px 0px; /*border style*/
+width: 191px;
+height: auto;
+border-radius: 10px;
+background-color: white;
+}
+
+img { /*correspond a a taille de les img dans herbergement*/
+border-radius: 10px;
+border:solid 5px white;
+background-color: white; 
+
+    width: 180px;
+    height: 96px;
+
+}
+
+figcaption {
+  height: 57px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 0.8em;
+
+}
+
+.etoile {
+
+  color: #0065FC;
+  margin-top: 5px;
+}
+.etoile_vide {
+
+  color: grey;
+}
+
+/*#hotel_du_port {
+
+  box-shadow: 0px 1px 3px 0px;
+width: 150px;
+height: auto;
+border-radius: 10px;
+border:solid 5px white;
+background-color: white; 
+
+}
+
+
+/*#Hotel_des_mouettes {
+
+  box-shadow: 0px 1px 3px 0px;
+width: 150px;
+height: auto;
+border-radius: 10px;
+
+
+
+border-radius: 10px;
+border:solid 5px white;
+background-color: white; 
+
+}
+
+#Hotel_de_la_mer {
+
+  box-shadow: 0px 1px 3px 0px;
+
+ width: 150px;
+ height: auto;
+ border-radius: 10px;
+ 
+ 
+ 
+ border-radius: 10px;
+ border:solid 5px white;
+ background-color: white; 
+ }
+ 
+ 
+ #Auberge_le_panier {
+
+  box-shadow: 0px 1px 3px 0px;
+
+ width: 150px;
+ height: auto;
+ border-radius: 10px;
+ 
+ 
+ 
+ border-radius: 10px;
+ border:solid 5px white;
+ background-color: white; 
+ 
+ }
+
+#Hotel_chez_Amina {
+
+  box-shadow: 0px 1px 3px 0px;
+  
+ width: 150px;
+ height: auto;
+ border-radius: 10px;
+ 
+ 
+ 
+ border-radius: 10px;
+ border:solid 5px white;
+ background-color: white; 
+ 
+}*/
+
+.img_pop {/*image dans section populaire*/
+
+
+}
+
+
+
+
+ h2  {
+
+font-size: 0.8em;
+font-family: 'Raleway';
+font-weight: 800;
+}
+ p {
+
+  font-size: 0.8em;
+font-family: 'Raleway';
+font-weight: 800;
+}
+ }
+
+
+
+
+
+
+
+footer {
+
+
+  font-family:'Raleway-Bold';
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F2F2F2 ;
+  padding-top: 25px;
+     
+}
+
