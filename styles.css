@@ -807,7 +807,7 @@ color: #0065FC;
 #nav_heb a:hover {
     
 text-decoration: none;
-border-top: 0
+border-top: 0;
 padding: 10px;
 color: #0065FC;
 border-bottom: 3px solid #0065fc;
@@ -831,7 +831,7 @@ border-bottom: 3px solid #0065fc;
     
     {
     text-decoration: none;
-    border-top: 0
+    border-top: 0;
     padding: 10px;
     color:#0065FC; 
     }
@@ -1099,16 +1099,22 @@ background-color: white;
 
     
     
-    .hebergement-items {
+.hebergement-items {
     
 display: flex;
 flex-direction: column;
 width:100%;
 height: auto;
 margin-top: 0;
- 
-    
-    }
+}
+
+.hebergement-item:hover {
+
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
     
     .hebergement-item > img { /*correspond a a taille de les img dans herbergement*/
     
@@ -1294,12 +1300,12 @@ flex-direction: column;
     }
     
     
-    .vieux_port > img {
+    /*.vieux_port > img {
     
-   /*width: 255px;
+   width: 255px;
     height: 398px;*/
     
-    }
+    
         
     .activite_fort {
     
@@ -1402,7 +1408,8 @@ flex-direction: column;
 
 /*Tablettes (768 px - 991 px)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  background-color: blue;
+  body {
+  background-color: blue;  }
   
 }
 /*Ordinateurs (992 px et plus )*/
