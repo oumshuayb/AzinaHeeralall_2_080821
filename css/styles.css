@@ -723,7 +723,6 @@ padding: 0%;
 #bloc_page {
 
 margin: auto;
-
 }
     
     
@@ -731,10 +730,9 @@ margin: auto;
 #titre_principal{
           
 display: flex;
+ }
     
-}
-    
-.logo_reservia img {
+ .logo_reservia img {
     
 box-sizing: border-box;
 width: 6rem;
@@ -748,11 +746,8 @@ h1 {
     
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
-
-
 display: block;
 font-size: 2em;
-
 }
     
 header h2 {
@@ -760,7 +755,6 @@ header h2 {
 font-family: 'raleway';
 font-weight: 500;
 font-size: 1rem;
-    
 }
     
 nav {
@@ -769,8 +763,8 @@ flex-direction: row;
     
 }
     
-nav a  /*reste a faire alignement au meme niveau que titre */
-    {
+nav a  /*correspond aux 3 elements dans la navigation  */{
+
 flex: auto;
 display: inline-flex;
 justify-content: space-evenly;
@@ -785,16 +779,13 @@ text-decoration: none;
 .navigation3 {
     
 justify-content: space-around;
-/*width: 50%;*/
 display: flex;
 border-bottom: 3px solid #F2F2F2;
-    
 }
     
 #nav_heb a {
      
 color: #0065FC;
-    
 }
     
 #nav_heb a:hover {
@@ -804,247 +795,182 @@ border-top: 0;
 padding: 10px;
 color: #0065FC;
 border-bottom: 3px solid #0065fc;
-    
-    }
+}
       
-    #nav_activite a {
+#nav_activite a {
     
-      color: black;
-    }
+color: black;
+}
     
-    #nav_ins a {
+#nav_ins a {
     
-      color: #0065FC;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
+color: #0065FC;
+position: absolute;
+top: 10px;
+right: 10px;
+}
     
-    #nav_activite a:hover  /*Apparence au survol des liens */
+#nav_activite a:hover  /*Apparence au survol des liens */{
     
-    {
-    text-decoration: none;
-    border-top: 0;
-    padding: 10px;
-    color:#0065FC; 
-    }
+text-decoration: none;
+border-top: 0;
+padding: 10px;
+color:#0065FC; 
+}
     
     
-    h2
+h2 {
     
-    {
-    font-family: 'Raleway', sans-serif;
-    font-weight:500;
-    font-size: 1em;
-    }
+ font-family: 'Raleway', sans-serif;
+ font-weight:500;
+ font-size: 1em;
+}
     
          
-    .fas fa-map-marker-alt /*concerne icone maps , quel denomination pour changer la fond de maps */
-    {
+.fas fa-map-marker-alt /*concerne icone maps , quel denomination pour changer la fond de maps */{
       
-    background-size: 20px;
-    background-color: #F2F2F2 ; 
-    text-align:center;
-    margin-right: 20px;
-    color: black;
-     
-    }
+background-size: 20px;
+background-color: #F2F2F2 ; 
+text-align:center;
+margin-right: 20px;
+color: black;
+}
     
-    h1,h2 
+h1,h2 { /* pour remonte les titre vers le haut */
     
-    { /* pour remonte les titre vers le haut */
+top: 50px;
+}
     
-    top: 50px;
-    }
-    
-    h5 {
+h5 {
       
-    font-size: 1.2em;
-    padding: 10px;
-    font-family:'Raleway';
-    font-weight: 500;
-    font-style: normal;
-    }
+font-size: 1.2em;
+padding: 10px;
+font-family:'Raleway';
+font-weight: 500;
+font-style: normal;
+}
     
-    #conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
+#conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
     
-      input[type="submit"] {
+input[type="submit"] {
         
-    display: none;
-    
-    }
+display: none;
+}
       
-    input[type="text"] {
+input[type="text"] {
       
-    padding: 0 0 0 20px;
-    height: 50px;
-    width: 220px;
-    border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
+padding: 0 0 0 20px;
+height: 50px;
+width: 220px;
+border: none;
+border-top: solid 1px #F2F2F2;
+border-bottom: solid 1px #F2F2F2;
+}
     
-    }
     
+.icon_maps {
     
-    .icon_maps {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 42px;
+background-color: #F2F2F2;
+border-radius: 14px 0 0 14px;
+border: none;
+}
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    background-color: #F2F2F2;
-    border-radius: 14px 0 0 14px;
-    border: none;
+.maps {
     
-    }
-    
-    .maps {
-    
-    display: inline-flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 35px;
-    
-    }
+display: inline-flex;
+flex-direction: row;
+margin-top: 15px;
+margin-bottom: 35px;
+}
 
-    .icon_maps_loupe  {
+.icon_maps_loupe  {
 
-      display: block;
-      position: relative;
-      left: -15px;
-      background: #0065fc;
-      color: #deebff;
-      border-radius: 10px 10px 10px 10px;
-      font-size: 20px;
-      padding: 15px;
-      width: 20px;
-      border: 0px;
-    }
+display: block;
+position: relative;
+left: -15px;
+background: #0065fc;
+color: #deebff;
+border-radius: 10px 10px 10px 10px;
+font-size: 20px;
+padding: 15px;
+width: 20px;
+border: 0px;
+}
     
     
-    #filtres {
+#filtres {
      
-    font-family: 'raleway'; 
-    font-weight: 800 ;
-    font-size: 1rem ;
-    display: inline-grid;
-    justify-items: start;
+font-family: 'raleway'; 
+font-weight: 800 ;
+font-size: 1rem ;
+display: inline-grid;
+justify-items: start;
     
-    }
+}
     
-    .logo-button {/*correspond a mes icons animaux romance ect..*/
+.logo-button {/*correspond a mes icons animaux romance ect..*/
       
-    background-color: #DEEBFF;
-    color: #0065fc;
-    padding: 18px;
-    border-radius: 200px;
-    margin-right: 15px;
-    margin-left: -18px;
-    
-    }
+background-color: #DEEBFF;
+color: #0065fc;
+padding: 18px;
+border-radius: 200px;
+margin-right: 15px;
+margin-left: -18px;
+}
+
 .filtre-items {
 
-  display: flex;
-  flex-wrap: wrap;
-
+display: flex;
+flex-wrap: wrap;
 }
 
     
 .button-filtre { /*iconn+texte*/
         
-    font-family: 'raleway';
-    font-weight: 800;
-    background-color: white;
-    border-color: lightgrey;
-    border-style: solid;
-    border-radius: 100px;
-    padding: 18px;
-    margin: 5px;
-    position: relative;
-    }
+font-family: 'raleway';
+font-weight: 800;
+background-color: white;
+border-color: lightgrey;
+border-style: solid;
+border-radius: 100px;
+padding: 18px;
+margin: 5px;
+position: relative;
+}
     
+#logo-info { /* icone info*/
     
-.button-filtre2 { /*iconn+texte*/
-      font-family: 'raleway';
-    font-weight: 800;
-    background-color: white;
-    border-color: lightgrey;
-    border-style: solid;
-    border-radius: 100px;
-    padding: 18px;
-    margin: 216px;
-    /* position: relative; */
-    /* display: flow-root; */
-    margin-top: -59px;
-    padding-left: 18px;
-    padding-right: 48px;
-      }
+display: flex;
+font-family: "Raleway", sans-serif;
+font-weight: 300;
+font-size: 0.8em;
+}
 
-.button-filtre3 { /*iconn+texte*/
-        
-        font-family: 'raleway';
-        font-weight: 800;
-        background-color: white;
-        border-color: lightgrey;
-        border-style: solid;
-        border-radius: 100px;
-        padding: 18px;
-        margin: 5px;
-        position: relative;
-        top: -195px;
-        } 
-.button-filtre4 { /*iconn+texte*/
-        
-          font-family: 'raleway';
-          font-weight: 800;
-          background-color: white;
-          border-color: lightgrey;
-          border-style: solid;
-          border-radius: 100px;
-          padding: 18px;
-          margin: 5px;
-          position: relative;
-          top: -184px;
-          }
-    
-    
-    #logo-info { /* icone info*/
-    
-      display: flex;
+.logo-item { 
       
-   
-     
-      font-family: "Raleway", sans-serif;
-      font-weight: 300;
-      font-size: 0.8em;
-    
-    
-    }
-
-    .logo-item{ 
-      height: 2rem;
-      
-      min-width: 2rem;
-      border: solid 1px #d9d9d9;
-      border-radius: 100%;
-      display: flex;
-    
-      color: #0065FC;
-      font-size: small;
-      justify-content: center;
-      align-items: center;
-  
-      margin: auto;
-
-    }
+height: 2rem;
+min-width: 2rem;
+border: solid 1px #d9d9d9;
+border-radius: 100%;
+display: flex;
+color: #0065FC;
+font-size: small;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
     
 #bloc_page1 {
       
 display: flex;
 padding: 37px;
 
-flex-direction: column-reverse;
-margin: 0px;
+/*flex-direction: column-reverse;
+margin: 0px;*/
 
   }
     
@@ -1054,12 +980,12 @@ partie herbergement
 
 .groupe_section {
 
-  display: flex;
+flex-direction: column-reverse;
 }
       
 /*#logement_marseille {
     
-background-color: #F2F2F2;
+
 box-shadow: 10px 10px 10px white;
 border-radius: 20px;
 padding: 14px;
@@ -1070,17 +996,15 @@ width: 110%;
 }*/
     
     
-.nuit {/*javais mis . pour class enfaite c diese pr ID*/
+.nuit {
     
 font-family:'raleway';
 font-weight: 500;
 margin-top: 5px;
-    
 }
     
 .hebergement-item {
       
-
 margin: 9px;
 flex-direction: column;
 box-shadow: 0px 1px 3px 0px;
@@ -1092,8 +1016,6 @@ background-color: white;
 }
 
 
-    
-    
 .hebergement-items {
     
 display: flex;
@@ -1103,256 +1025,211 @@ height: auto;
 margin-top: 0;
 }
 
-.hebergement-item:hover {
+.hebergement-item:hover { /* s'aggrandi quand on passe la souris dessus*/
 
-  cursor: pointer;
-  transform: scale(1.1);
+cursor: pointer;
+transform: scale(1.1);
 }
 
-
+.hebergement-item > img { /*correspond a a taille de les img dans herbergement*/
     
-    .hebergement-item > img { /*correspond a a taille de les img dans herbergement*/
+border-radius: 7px 15px 0 2px;
+background-color: white;
+object-fit: cover;
+border-bottom: none;
+width: 100%;
+max-height: 133px;
+}
     
-    border-radius: 7px 15px 0 2px;
-    background-color: white;
-    object-fit: cover;
-   border-bottom: none;
-    width: 100%;
-    
-    max-height: 133px;
-    
-    }
-    
-    figcaption {
+figcaption {
       
-    height: 57px;
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-style: normal;
-    font-size: 0.8em;
+height: 57px;
+font-family: 'Raleway';
+font-weight: 800;
+font-style: normal;
+font-size: 0.8em;
+}
     
-    }
+.etoile {
     
-    .etoile {
+color: #0065FC;
+margin-left: auto;
+}
     
-    color: #0065FC;
-  
-    margin-left: auto;
+.etoile_vide {
     
-    }
-    
-    .etoile_vide {
-    
-    color: grey;
-    
-    }
+color: grey;
+}
     
 #populaire {
     
-    background: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-  
-    margin-top: 0px;
-    
-    width: auto;
-    font-size: 20px;
-	
+background: #F2F2F2;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+margin-top: 0px;
+width: auto;
+font-size: 20px;
 }
 
 .etoile_populaire {
 
-  color: #0065FC;
-  padding-top: 30%;
-
-
-
+color: #0065FC;
+padding-top: 30%;
 }
     
     
 .populaire_items {
     
 flex-direction: column;
+}
     
-    }
-    
-    .populaire_item  {
+.populaire_item  {
       
-      width: 85%;
-      height: 150px;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 0px 0px 6px 0px #0000002e;
-      align-items: stretch;
-      margin-left: 22px;
-    
-    }
+width: 85%;
+height: 150px;
+background-color: white;
+border-radius: 20px;
+box-shadow: 0px 0px 6px 0px #0000002e;
+align-items: stretch;
+margin-left: 22px;
+}
      
     
     
-    .populaire_item > img {
+.populaire_item > img {
     
-    background-color: white;
-    object-fit: cover;
-    width: 40%;
-    height: 92%;
-    margin: 5px;
-    border-radius: 15px 0 0 15px;
-          
-    }
+background-color: white;
+object-fit: cover;
+width: 40%;
+height: 92%;
+margin: 5px;
+border-radius: 15px 0 0 15px;
+}
     
     
-    h2  {
+h2  {
     
-      font-size: 1.3rem;
-    font-family: 'Raleway';
-    font-weight: 800;
+font-size: 1.3rem;
+font-family: 'Raleway';
+font-weight: 800;
+}
     
-    }
+p {
     
-    p {
-    
-    font-size: 0.8em;
-    font-family: 'Raleway';
-    font-weight: 800;
-    
-    }
+font-size: 0.8em;
+font-family: 'Raleway';
+font-weight: 800;
+}
      
     
+#sortie {
     
-    #sortie {
-    
-    display: flex;
-    align-content: stretch;
-    justify-content: center;
-    align-items: flex-start;
-    
-    }
+display: flex;
+align-content: stretch;
+justify-content: center;
+align-items: flex-start;
+}
     
     
     
-    .activite_items {
+.activite_items {
     
-      display: flex;
-      /* padding: 0px; */
-      /* margin: -5px; */
-      flex-direction: column;
-      height: auto;
-      width: 100%;
-    }
+display: flex;
+flex-direction: column;
+height: auto;
+width: 100%;
+}
     
     
-    figure {
+figure {
       
-      display: flex;
+display: flex;
+}
     
-    }
+.activite_items img {
     
-    .activite_items img {
+object-fit: cover;
+width: 103%;
+height: 100%;
+margin: -2px;
+height: 84%;
+}
     
-    object-fit: cover;
-    width: 103%;
-    height: 100%;
-    margin: -2px;
-    height: 84%;
-    
-    }
-    
-   /* .groupe_section {
+/* .groupe_section {
       
-      display: flex;
-    }*/
+ display: flex;
+}*/
     
-    .courbe {
+.courbe {
     
-      display: flex;
-      flex-wrap: wrap;
-      align-content: stretch;
-      justify-content: space-between;
-      align-items: center;
+display: flex;
+flex-wrap: wrap;
+align-content: stretch;
+justify-content: space-between;
+align-items: center;
+}
     
-    }
-    
-    .vieux_port  {
+.vieux_port  {
       
-      overflow: hidden;
-      height: 245px;
-      border-radius: 20px;
-      box-shadow: 1px 1px 17px -9px;
-      display: flex;
-      flex-direction: column;
-      width: 85%;
-      padding: -20px;
-      padding: -25px;
-      /* margin: 25px; */
-      margin-bottom: 39px;
+overflow: hidden;
+height: 245px;
+border-radius: 20px;
+box-shadow: 1px 1px 17px -9px;
+display: flex;
+flex-direction: column;
+width: 85%;
+margin-bottom: 39px;
+}
     
-    }
+.activite_fort {
     
+flex-direction: column;
+height: 220px;
+width: 85%;
+margin-top: 2px;
+border-radius: 16px;
+box-shadow: 1px 1px 17px -9px;
+background: white;
+overflow: hidden;
+}
     
-    /*.vieux_port > img {
+.iles {
     
-   width: 255px;
-    height: 398px;*/
+flex-direction: column;
+width: 85%;
+height: 222px;
+border-radius: 16px;
+box-shadow: 1px 1px 17px -9px;
+background: white;
+overflow: hidden;
+}
     
+.notre_dame {
     
-        
-    .activite_fort {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 85%;
+height: 212px;
+border-radius: 16px;
+box-shadow: 1px 1px 17px -9px;
+background: white;
+overflow: hidden;
+}
     
-      flex-direction: column;
-      height: 220px;
-      width: 85%;
-     margin-top: 2px;
-      border-radius: 16px;
-      box-shadow: 1px 1px 17px -9px;
-      background: white;
-      overflow: hidden;
+.parc {
     
-    }
-    
-    .iles {
-    
-    
-    flex-direction: column;
-    
-    width: 85%;
-    height: 222px;
-    border-radius: 16px;
-    box-shadow: 1px 1px 17px -9px;
-    background: white;
-    overflow: hidden;
-    
-    }
-    
-    .notre_dame {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 85%;
-  height: 212px;
-    border-radius: 16px;
-    box-shadow: 1px 1px 17px -9px;
-    background: white;
-    overflow: hidden;
-    
-    }
-    
-    .parc {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 184px;
-    width: 85%;
-    
-    border-radius: 16px;
-    box-shadow: 1px 1px 17px -9px;
-    background: white;
-    overflow: hidden;
-    
-    }
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+height: 184px;
+width: 85%;
+border-radius: 16px;
+box-shadow: 1px 1px 17px -9px;
+background: white;
+overflow: hidden;
+}
     
     /*.groupe1 {
     
@@ -1363,261 +1240,227 @@ flex-direction: column;
     width: 26%;*/
         
     
+.groupe2 {
     
-    .groupe2 {
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-        
-    }
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
     
     
-    footer {
+footer {
       
-      display: flex;
-      /* flex-wrap: wrap; */
-      align-items: baseline;
-      background-color: #F2F2F2;
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
-      padding: 10px;
-      
-    }
+display: flex;
+align-items: baseline;
+background-color: #F2F2F2;
+flex-direction: column;
+align-items: flex-start;
+height: auto;
+padding: 10px;
+}
     
     
-    p  {
+p  {
     
-    font-family:'Raleway';
-    font-weight: 500;
-    
-    }
-      }
+font-family:'Raleway';
+font-weight: 500;
+}
+}
     
     
 
 /*Tablettes (768 px - 991 px)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  html,body {
+  
+html,body {
 
-    margin: 0;
-    padding: 0%;
+margin: 0;
+padding: 0%;
+}
     
-    }
+#bloc_page {
     
-    #bloc_page {
-    
-    margin: auto;
-    
-    }
+margin: auto;
+}
         
-        
-        
-    #titre_principal{
+#titre_principal{
               
-    display: flex;
+display: flex;
+}
         
-    }
+.logo_reservia img {
         
-    .logo_reservia img {
+box-sizing: border-box;
+width: 6rem;
+margin-top: 0.5rem;
+margin-bottom: 1.5rem;
+}
         
-    box-sizing: border-box;
-    width: 6rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
+h1 {
         
-    }
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+display: block;
+font-size: 2em;
+}
         
-    
-    h1 {
+header h2 {
         
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    
-    
-    display: block;
-    font-size: 2em;
-    
-    }
+font-family: 'raleway';
+font-weight: 500;
+font-size: 1rem;
+}
         
-    header h2 {
-        
-    font-family: 'raleway';
-    font-weight: 500;
-    font-size: 1rem;
-        
-    }
-        
-    nav {
+nav {
           
-    flex-direction: row;
+flex-direction: row;
+}
         
-    }
+nav a  {
+    
+flex: auto;
+display: inline-flex;
+justify-content: space-evenly;
+display: flex;
+justify-content: flex-end;
+font-weight: normal;
+font-family: 'Raleway', sans-serif;
+font-weight:500;
+text-decoration: none;
+}
         
-    nav a  /*reste a faire alignement au meme niveau que titre */
-        {
-    flex: auto;
-    display: inline-flex;
-    justify-content: space-evenly;
-    display: flex;
-    justify-content: flex-end;
-    font-weight: normal;
-    font-family: 'Raleway', sans-serif;
-    font-weight:500;
-    text-decoration: none;
-    }
+.navigation3 {
         
-    .navigation3 {
+justify-content: space-around;
+display: flex;
+border-bottom: 3px solid #F2F2F2;
+}
         
-    justify-content: space-around;
-    /*width: 50%;*/
-    display: flex;
-    border-bottom: 3px solid #F2F2F2;
-        
-    }
-        
-    #nav_heb a {
+#nav_heb a {
          
-    color: #0065FC;
+color: #0065FC;
+}
         
-    }
+#nav_heb a:hover {
         
-    #nav_heb a:hover {
-        
-    text-decoration: none;
-    border-top: 0;
-    padding: 10px;
-    color: #0065FC;
-    border-bottom: 3px solid #0065fc;
-        
-        }
+text-decoration: none;
+border-top: 0;
+padding: 10px;
+color: #0065FC;
+border-bottom: 3px solid #0065fc;
+}
           
-        #nav_activite a {
+#nav_activite a {
         
-          color: black;
-        }
+color: black;
+}
         
-        #nav_ins a {
+#nav_ins a {
         
-          color: #0065FC;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-        }
+color: #0065FC;
+position: absolute;
+top: 10px;
+right: 10px;
+}
         
-        #nav_activite a:hover  /*Apparence au survol des liens */
+#nav_activite a:hover  /*Apparence au survol des liens */{
         
-        {
-        text-decoration: none;
-        border-top: 0;
-        padding: 10px;
-        color:#0065FC; 
-        }
+text-decoration: none;
+border-top: 0;
+padding: 10px;
+color:#0065FC;
+}
         
         
-        h2
+h2 {
+
+font-family: 'Raleway', sans-serif;
+font-weight:500;
+font-size: 1em;
+}
         
-        {
-        font-family: 'Raleway', sans-serif;
-        font-weight:500;
-        font-size: 1em;
-        }
-        
-             
-        .fas fa-map-marker-alt /*concerne icone maps , quel denomination pour changer la fond de maps */
-        {
+.fas fa-map-marker-alt /*concerne icone maps , quel denomination pour changer la fond de maps */{
           
-        background-size: 20px;
-        background-color: #F2F2F2 ; 
-        text-align:center;
-        margin-right: 20px;
-        color: black;
-         
-        }
+background-size: 20px;
+background-color: #F2F2F2 ; 
+text-align:center;
+margin-right: 20px;
+color: black;
+}
         
-        h1,h2 
+h1,h2 { /* pour remonte les titre vers le haut */
         
-        { /* pour remonte les titre vers le haut */
+top: 50px;
+}
         
-        top: 50px;
-        }
-        
-        h5 {
+h5 {
           
-        font-size: 1.2em;
-        padding: 10px;
-        font-family:'Raleway';
-        font-weight: 500;
-        font-style: normal;
-        }
+font-size: 1.2em;
+padding: 10px;
+font-family:'Raleway';
+font-weight: 500;
+font-style: normal;
+}
         
-        #conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
+#conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
         
-          input[type="submit"] {
-            
-        display: none;
-        
-        }
+input[type="submit"] {
+display: none;
+}
           
-        input[type="text"] {
+input[type="text"] {
           
-        padding: 0 0 0 20px;
-        height: 50px;
-        width: 220px;
-        border: none;
-        border-top: solid 1px #F2F2F2;
-        border-bottom: solid 1px #F2F2F2;
+  padding: 0 0 0 20px;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-top: solid 1px #F2F2F2;
+  border-bottom: solid 1px #F2F2F2;
+}
         
-        }
         
+.icon_maps {
         
-        .icon_maps {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 42px;
+background-color: #F2F2F2;
+border-radius: 14px 0 0 14px;
+border: none;
+}
         
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 42px;
-        background-color: #F2F2F2;
-        border-radius: 14px 0 0 14px;
-        border: none;
+.maps {
         
-        }
-        
-        .maps {
-        
-        display: inline-flex;
-        flex-direction: row;
-        margin-top: 15px;
-        margin-bottom: 35px;
-        
-        }
+display: inline-flex;
+flex-direction: row;
+margin-top: 15px;
+margin-bottom: 35px;
+}
     
-        .icon_maps_loupe  {
+.icon_maps_loupe  {
     
-          display: block;
-          position: relative;
-          left: -15px;
-          background: #0065fc;
-          color: #deebff;
-          border-radius: 10px 10px 10px 10px;
-          font-size: 20px;
-          padding: 15px;
-          width: 20px;
-          border: 0px;
-        }
+display: block;
+position: relative;
+left: -15px;
+background: #0065fc;
+color: #deebff;
+border-radius: 10px 10px 10px 10px;
+font-size: 20px;
+padding: 15px;
+width: 20px;
+border: 0px;
+}
         
         
-        #filtres {
+ #filtres {
          
-        font-family: 'raleway'; 
-        font-weight: 800 ;
-        font-size: 1rem ;
-        display: inline-grid;
-        justify-items: start;
-        
-        }
+font-family: 'raleway'; 
+font-weight: 800 ;
+font-size: 1rem ;
+display: inline-grid;
+justify-items: start;
+}
         
         .logo-button {/*correspond a mes icons animaux romance ect..*/
           
@@ -2355,8 +2198,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 align-content: stretch;
-justify-content: flex-start;
-padding: 37px;
+justify-content: flex-star;
 
 }
 
@@ -2395,6 +2237,7 @@ width: 160px;
 height: 136px;
 border-radius: 10px;
 border: solid 5px white;
+background: white;
 
 
 }
