@@ -743,14 +743,7 @@ margin-bottom: 1.5rem;
     
 }
     
-.logo-info {
-    
-margin-top: auto;
-margin-bottom: auto;
-color:#0065FC;
-      
-}
-    
+
 h1 {
     
 font-family: 'Raleway', sans-serif;
@@ -1015,7 +1008,7 @@ border-bottom: 3px solid #0065fc;
           }
     
     
-    #logo-info {
+    #logo-info { /* icone info*/
     
       display: flex;
       
@@ -1024,13 +1017,11 @@ border-bottom: 3px solid #0065fc;
       font-family: "Raleway", sans-serif;
       font-weight: 300;
       font-size: 0.8em;
-     position: relative;
-     
-      margin-bottom: 12%;
+    
     
     }
 
-    .logo-item{
+    .logo-item{ 
       height: 2rem;
       
       min-width: 2rem;
@@ -1054,14 +1045,19 @@ padding: 37px;
 
 flex-direction: column-reverse;
 margin: 0px;
-margin-top: -85px;
+
   }
     
     
     
 partie herbergement
+
+.groupe_section {
+
+  display: flex;
+}
       
-#logement_marseille {
+/*#logement_marseille {
     
 background-color: #F2F2F2;
 box-shadow: 10px 10px 10px white;
@@ -1069,10 +1065,9 @@ border-radius: 20px;
 padding: 14px;
 display: flex;
 flex-wrap: wrap;
-height: 83%;
 width: 110%;
     
-}
+}*/
     
     
 .nuit {/*javais mis . pour class enfaite c diese pr ID*/
@@ -1157,20 +1152,19 @@ margin-top: 0;
     background: #F2F2F2;
     display: flex;
     flex-direction: column;
-    /*height: -47px;
-    width: -4px;*/
     border-radius: 10px;
-   /* padding: -7px;*/
+  
     margin-top: 0px;
-    padding:10px;
-    width: 100%;
+    
+    width: auto;
     font-size: 20px;
+	
 }
 
 .etoile_populaire {
 
   color: #0065FC;
-  padding-top: 36%;
+  padding-top: 30%;
 
 
 
@@ -1185,16 +1179,13 @@ flex-direction: column;
     
     .populaire_item  {
       
-      width: auto;
+      width: 85%;
       height: 150px;
-      margin: -3px;
       background-color: white;
       border-radius: 20px;
-      padding: -14px 6px 12px px;
       box-shadow: 0px 0px 6px 0px #0000002e;
       align-items: stretch;
-      font-size: -6.9em;
-      margin-top: 49px;
+      margin-left: 22px;
     
     }
      
@@ -1403,22 +1394,709 @@ flex-direction: column;
     font-weight: 500;
     
     }
+      }
     
     
 
 /*Tablettes (768 px - 991 px)*/
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
-  background-color: blue;  }
+  html,body {
+
+    margin: 0;
+    padding: 0%;
+    
+    }
+    
+    #bloc_page {
+    
+    margin: auto;
+    
+    }
+        
+        
+        
+    #titre_principal{
+              
+    display: flex;
+        
+    }
+        
+    .logo_reservia img {
+        
+    box-sizing: border-box;
+    width: 6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+        
+    }
+        
+    
+    h1 {
+        
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    
+    
+    display: block;
+    font-size: 2em;
+    
+    }
+        
+    header h2 {
+        
+    font-family: 'raleway';
+    font-weight: 500;
+    font-size: 1rem;
+        
+    }
+        
+    nav {
+          
+    flex-direction: row;
+        
+    }
+        
+    nav a  /*reste a faire alignement au meme niveau que titre */
+        {
+    flex: auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    text-decoration: none;
+    }
+        
+    .navigation3 {
+        
+    justify-content: space-around;
+    /*width: 50%;*/
+    display: flex;
+    border-bottom: 3px solid #F2F2F2;
+        
+    }
+        
+    #nav_heb a {
+         
+    color: #0065FC;
+        
+    }
+        
+    #nav_heb a:hover {
+        
+    text-decoration: none;
+    border-top: 0;
+    padding: 10px;
+    color: #0065FC;
+    border-bottom: 3px solid #0065fc;
+        
+        }
+          
+        #nav_activite a {
+        
+          color: black;
+        }
+        
+        #nav_ins a {
+        
+          color: #0065FC;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+        
+        #nav_activite a:hover  /*Apparence au survol des liens */
+        
+        {
+        text-decoration: none;
+        border-top: 0;
+        padding: 10px;
+        color:#0065FC; 
+        }
+        
+        
+        h2
+        
+        {
+        font-family: 'Raleway', sans-serif;
+        font-weight:500;
+        font-size: 1em;
+        }
+        
+             
+        .fas fa-map-marker-alt /*concerne icone maps , quel denomination pour changer la fond de maps */
+        {
+          
+        background-size: 20px;
+        background-color: #F2F2F2 ; 
+        text-align:center;
+        margin-right: 20px;
+        color: black;
+         
+        }
+        
+        h1,h2 
+        
+        { /* pour remonte les titre vers le haut */
+        
+        top: 50px;
+        }
+        
+        h5 {
+          
+        font-size: 1.2em;
+        padding: 10px;
+        font-family:'Raleway';
+        font-weight: 500;
+        font-style: normal;
+        }
+        
+        #conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
+        
+          input[type="submit"] {
+            
+        display: none;
+        
+        }
+          
+        input[type="text"] {
+          
+        padding: 0 0 0 20px;
+        height: 50px;
+        width: 220px;
+        border: none;
+        border-top: solid 1px #F2F2F2;
+        border-bottom: solid 1px #F2F2F2;
+        
+        }
+        
+        
+        .icon_maps {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        background-color: #F2F2F2;
+        border-radius: 14px 0 0 14px;
+        border: none;
+        
+        }
+        
+        .maps {
+        
+        display: inline-flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        
+        }
+    
+        .icon_maps_loupe  {
+    
+          display: block;
+          position: relative;
+          left: -15px;
+          background: #0065fc;
+          color: #deebff;
+          border-radius: 10px 10px 10px 10px;
+          font-size: 20px;
+          padding: 15px;
+          width: 20px;
+          border: 0px;
+        }
+        
+        
+        #filtres {
+         
+        font-family: 'raleway'; 
+        font-weight: 800 ;
+        font-size: 1rem ;
+        display: inline-grid;
+        justify-items: start;
+        
+        }
+        
+        .logo-button {/*correspond a mes icons animaux romance ect..*/
+          
+        background-color: #DEEBFF;
+        color: #0065fc;
+        padding: 18px;
+        border-radius: 200px;
+        margin-right: 15px;
+        margin-left: -18px;
+        
+        }
+    .filtre-items {
+    
+      display: flex;
+      flex-wrap: wrap;
+    
+    }
+    
+        
+    .button-filtre { /*iconn+texte*/
+            
+        font-family: 'raleway';
+        font-weight: 800;
+        background-color: white;
+        border-color: lightgrey;
+        border-style: solid;
+        border-radius: 100px;
+        padding: 18px;
+        margin: 5px;
+        position: relative;
+        }
+        
+        
+    .button-filtre2 { /*iconn+texte*/
+          font-family: 'raleway';
+        font-weight: 800;
+        background-color: white;
+        border-color: lightgrey;
+        border-style: solid;
+        border-radius: 100px;
+        padding: 18px;
+        margin: 216px;
+        /* position: relative; */
+        /* display: flow-root; */
+        margin-top: -59px;
+        padding-left: 18px;
+        padding-right: 48px;
+          }
+    
+    .button-filtre3 { /*iconn+texte*/
+            
+            font-family: 'raleway';
+            font-weight: 800;
+            background-color: white;
+            border-color: lightgrey;
+            border-style: solid;
+            border-radius: 100px;
+            padding: 18px;
+            margin: 5px;
+            position: relative;
+            top: -195px;
+            } 
+    .button-filtre4 { /*iconn+texte*/
+            
+              font-family: 'raleway';
+              font-weight: 800;
+              background-color: white;
+              border-color: lightgrey;
+              border-style: solid;
+              border-radius: 100px;
+              padding: 18px;
+              margin: 5px;
+              position: relative;
+              top: -184px;
+              }
+        
+        
+        #logo-info { /* icone info*/
+        
+          display: flex;
+          
+       
+         
+          font-family: "Raleway", sans-serif;
+          font-weight: 300;
+          font-size: 1.8em;
+         position: relative;
+         
+          margin-bottom: 12%;
+        
+        }
+    
+        .logo-item { 
+          height: 2rem;
+          
+          min-width: 2rem;
+          border: solid 1px #d9d9d9;
+          border-radius: 100%;
+          display: flex;
+        
+          color: #0065FC;
+          font-size: small;
+          justify-content: center;
+          align-items: center;
+      
+          margin: auto;
+    
+        }
+        
+    #bloc_page1 {
+          
+    display: flex;
+    padding: 37px;
+    
+    flex-direction: column-reverse;
+    margin: 0px;
+    margin-top: -85px;
+      }
+        
+        
+        
+    partie herbergement
+          
+    #logement_marseille {
+        
+    background-color: #F2F2F2;
+    box-shadow: 10px 10px 10px white;
+    border-radius: 20px;
+    padding: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 110%;
+        
+    }
+        
+        
+    .nuit {/*javais mis . pour class enfaite c diese pr ID*/
+        
+    font-family:'raleway';
+    font-weight: 500;
+    margin-top: 5px;
+        
+    }
+        
+    .hebergement-item {
+          
+    
+    margin: 9px;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px 0px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid 5px white;
+    background-color: white;
+    }
+    
+    
+        
+        
+    .hebergement-items {
+        
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+    margin-top: 0;
+    }
+    
+    .hebergement-item:hover {
+    
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    
+    
+        
+        .hebergement-item > img { /*correspond a a taille de les img dans herbergement*/
+        
+        border-radius: 7px 15px 0 2px;
+        background-color: white;
+        object-fit: cover;
+       border-bottom: none;
+        width: 100%;
+        
+        max-height: 133px;
+        
+        }
+        
+        figcaption {
+          
+        height: 57px;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-style: normal;
+        font-size: 0.8em;
+        
+        }
+        
+        .etoile {
+        
+        color: #0065FC;
+      
+        margin-left: auto;
+        
+        }
+        
+        .etoile_vide {
+        
+        color: grey;
+        
+        }
+        
+    #populaire {
+        
+        background: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        /*height: -47px;
+        width: -4px;*/
+        border-radius: 10px;
+       /* padding: -7px;*/
+        margin-top: 0px;
+        padding:10px;
+        width: 100%;
+        font-size: 20px;
+      margin-left : 15px;
+    }
+    
+    .etoile_populaire {
+    
+      color: #0065FC;
+      padding-top: 30%;
+    
+    
+    
+    }
+        
+        
+    .populaire_items {
+        
+    flex-direction: column;
+        
+        }
+        
+        .populaire_item  {
+          
+          width: auto;
+          height: 150px;
+          
+          background-color: white;
+          border-radius: 20px;
+          padding: -14px 6px 12px px;
+          box-shadow: 0px 0px 6px 0px #0000002e;
+          align-items: stretch;
+          font-size: -6.9em;
+          margin-top: 49px;
+        
+        }
+         
+        
+        
+        .populaire_item > img {
+        
+        background-color: white;
+        object-fit: cover;
+        width: 40%;
+        height: 92%;
+        margin: 5px;
+        border-radius: 15px 0 0 15px;
+              
+        }
+        
+        
+        h2  {
+        
+          font-size: 1.3rem;
+        font-family: 'Raleway';
+        font-weight: 800;
+        
+        }
+        
+        p {
+        
+        font-size: 0.8em;
+        font-family: 'Raleway';
+        font-weight: 800;
+        
+        }
+         
+        
+        
+        #sortie {
+        
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+        align-items: flex-start;
+        
+        }
+        
+        
+        
+        .activite_items {
+        
+          display: flex;
+          /* padding: 0px; */
+          /* margin: -5px; */
+          flex-direction: column;
+          height: auto;
+          width: 100%;
+        }
+        
+        
+        figure {
+          
+          display: flex;
+        
+        }
+        
+        .activite_items img {
+        
+        object-fit: cover;
+        width: 103%;
+        height: 100%;
+        margin: -2px;
+        height: 84%;
+        
+        }
+        
+       /* .groupe_section {
+          
+          display: flex;
+        }*/
+        
+        .courbe {
+        
+          display: flex;
+          flex-wrap: wrap;
+          align-content: stretch;
+          justify-content: space-between;
+          align-items: center;
+        
+        }
+        
+        .vieux_port  {
+          
+          overflow: hidden;
+          height: 245px;
+          border-radius: 20px;
+          box-shadow: 1px 1px 17px -9px;
+          display: flex;
+          flex-direction: column;
+          width: 85%;
+          padding: -20px;
+          padding: -25px;
+          /* margin: 25px; */
+          margin-bottom: 39px;
+        
+        }
+        
+        
+        /*.vieux_port > img {
+        
+       width: 255px;
+        height: 398px;*/
+        
+        
+            
+        .activite_fort {
+        
+          flex-direction: column;
+          height: 220px;
+          width: 85%;
+         margin-top: 2px;
+          border-radius: 16px;
+          box-shadow: 1px 1px 17px -9px;
+          background: white;
+          overflow: hidden;
+        
+        }
+        
+        .iles {
+        
+        
+        flex-direction: column;
+        
+        width: 85%;
+        height: 222px;
+        border-radius: 16px;
+        box-shadow: 1px 1px 17px -9px;
+        background: white;
+        overflow: hidden;
+        
+        }
+        
+        .notre_dame {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 85%;
+      height: 212px;
+        border-radius: 16px;
+        box-shadow: 1px 1px 17px -9px;
+        background: white;
+        overflow: hidden;
+        
+        }
+        
+        .parc {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 184px;
+        width: 85%;
+        
+        border-radius: 16px;
+        box-shadow: 1px 1px 17px -9px;
+        background: white;
+        overflow: hidden;
+        
+        }
+        
+        /*.groupe1 {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        width: 26%;*/
+            
+        
+        
+        .groupe2 {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+            
+        }
+        
+        
+        footer {
+          
+          display: flex;
+          /* flex-wrap: wrap; */
+          align-items: baseline;
+          background-color: #F2F2F2;
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+          padding: 10px;
+          
+        }
+        
+        
+        p  {
+        
+        font-family:'Raleway';
+        font-weight: 500;
+        
+        }
+
   
-}
+     }
+    
+  
+  
+ 
+  
+
 /*Ordinateurs (992 px et plus )*/
 @media (min-width: 992px){
 
- /* body{
-    background-color : pink;
-  }
-}
+  
+
 #bloc_page {
 
 width: 1174px;
@@ -1426,14 +2104,13 @@ margin: auto;
 
 }
 
-#titre_principal{
+#titre_principal {
       
 display: flex;
 
 }
 
-.logo_reservia img 
-{
+.logo_reservia img {
 
 box-sizing: border-box;
 width: 6rem;
@@ -1442,25 +2119,19 @@ margin-bottom: 1.5rem;
 
 }
 
-.logo-info {
-margin-top: auto;
-margin-bottom: auto;
-color:#0065FC;
-  
-}
 
-  h1 {
+
+h1 {
+  
 font-size: 22px;
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
-
 }
 
 header h2 {
 
 font-family: 'raleway';
 font-weight: 500;
-
 }
 
 nav {
@@ -1470,20 +2141,17 @@ height: 4rem;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-
 }
 
-nav a  
-{
+nav a  {
+
 flex: auto;
-display: inline-flex;
-justify-content: space-evenly;
 display: flex;
 justify-content: flex-end;
 font-weight: normal;
 font-family: 'Raleway', sans-serif;
 font-weight:500;
-  font-size: 0.2em;
+font-size: 0.2em;
 text-decoration: none;
 }
 
@@ -1498,17 +2166,17 @@ display: flex;
 vertical-align: top;
 align-items: flex-start;
 margin-left: 676px;
-
+font-size: 75px;
 }
 
 #nav_heb a {
  
-  color: #0065FC;
+color: #0065FC;
 }
 
-#nav_heb a:hover 
-{
-  text-decoration: none;
+#nav_heb a:hover {
+
+text-decoration: none;
 border-top: 3px solid #0065FC;
 padding: 10px;
 color:#0065FC; 
@@ -1516,17 +2184,16 @@ color:#0065FC;
   
 #nav_activite a {
 
-  color: black;
+color: black;
 }
 
 #nav_ins a {
 
-  color: #0065FC;
+color: #0065FC;
 }
 
-#nav_activite a:hover  Apparence au survol des liens 
+#nav_activite a:hover  Apparence au survol des liens {
 
-{
 text-decoration: none;
 border-top: 3px solid #0065FC;
 padding: 10px;
@@ -1534,29 +2201,25 @@ color:#0065FC;
 }
 
 
-h2
+h2 {
 
-{
 font-family: 'Raleway', sans-serif;
 font-weight:500;
 font-size: 1em;
 }
 
      
-.fas fa-map-marker-alt/*concerne icone maps , quel denomination pour changer la fond de maps 
-{
+.fas fa-map-marker-alt/*concerne icone maps , quel denomination pour changer la fond de maps*/ {
   
 background-size: 20px;
 background-color: #F2F2F2 ; 
 text-align:center;
 margin-right: 20px;
-color: black;
- 
+color: black;  
 }
+ 
 
-h1,h2 
-
-{ /* pour remonte les titre vers le haut 
+h1,h2 { /* pour remonte les titre vers le haut*/
 
 top: 50px;
 }
@@ -1565,16 +2228,15 @@ h5 {
   
 font-size: 0.7em;
 padding: 10px;
-font-family:'Raleway';
+font-family: 'Raleway';
 font-weight: 500;
-font-style: normal;
+font-style: normal;   
 }
 
-  #conteneur /*concerne icon maps avec marseille dans cadre et rechercher submit
+#conteneur /*concerne icon maps avec marseille dans cadre et rechercher submit*/
 
-  input[type="submit"] {
-    
-margin-left: -65px;
+input[type="submit"] {
+  
 height: 51px;
 width: 125px;
 background: #0065FC;
@@ -1589,7 +2251,6 @@ input[type="text"] {
   
 padding: 0 0 0 20px;
 height: 50px;
-width: 220px;
 border: none;
 border-top: solid 1px #F2F2F2;
 border-bottom: solid 1px #F2F2F2;
@@ -1618,17 +2279,28 @@ margin-bottom: 35px;
 
 }
 
+.icon_maps_loupe  {
+
+display: none !important;
+
+}
+
+
+
+
+
 
 #filtres {
  
 font-family: 'raleway'; 
-font-weight: 800 ;
-font-size: 0.8em ;
-
+align-items: center;
+display: flex;
+margin-bottom: 40px;
+margin-top: 50px;
+font-weight: 800;
 }
 
-.logo-button {/*correspond a mes icons animaux romance ect..
-  
+.logo-button {/*correspond a mes icons animaux romance ect..*/
 background-color: #DEEBFF;
 color: #0065fc;
 padding: 18px;
@@ -1638,7 +2310,7 @@ margin-left: -18px;
 
 }
 
-.button-filtre { /*iconn+texte
+.button-filtre { /*iconn+texte*/
     
 font-family: 'raleway';
 font-weight: 800;
@@ -1653,10 +2325,27 @@ margin: 5px;
 
 
 
-#logo-info {
-
+#logo-info { /* icone info*/
+    
 display: flex;
+font-family: "Raleway", sans-serif;
+font-weight: 300;
+font-size: 1.8em;
+align-items: center;
+}
 
+
+.logo-item { 
+  
+height: 2rem;
+min-width: 2rem;
+border: solid 1px #d9d9d9;
+border-radius: 100%;
+display: flex;
+color: #0065FC;
+font-size: small;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -1671,7 +2360,7 @@ padding: 37px;
 
 }
 
-/*partie herbergement
+/*partie herbergement*/
   
 #logement_marseille {
 
@@ -1681,13 +2370,12 @@ border-radius: 20px;
 padding: 14px;
 display: flex;
 flex-wrap: wrap;
-height: 83%;
 width: 110%;
 
 }
 
 
-.nuit {/* javais mis . pour class enfaite c diese pr ID
+.nuit {
 
 font-family:'raleway';
 font-weight: 500;
@@ -1707,7 +2395,7 @@ width: 160px;
 height: 136px;
 border-radius: 10px;
 border: solid 5px white;
-background-color: white;
+
 
 }
 
@@ -1723,7 +2411,7 @@ align-items: center;
 
 }
 
-.hebergement-item > img { /*correspond a a taille de les img dans herbergement
+.hebergement-item > img { /*correspond a a taille de les img dans herbergement*/
 
 border-radius: 7px 15px 0 2px;
 background-color: white;
@@ -1749,7 +2437,7 @@ font-size: 0.8em;
 .etoile {
 
 color: #0065FC;
-margin-top: 5px;
+margin-left: auto;
 
 }
 
@@ -1764,15 +2452,12 @@ color: grey;
 background: #F2F2F2;
 display: flex;
 flex-direction: column;
-height: -47px;
-width: -4px;
-margin: 42%;
 width: min-content;
 border-radius: 10px;
-padding: -7px;
 margin-top: 0px;
 padding: 23px;
 padding-bottom: 11px;
+margin-left:15px;
 
 }
 
@@ -1788,13 +2473,11 @@ flex-direction: column;
 width: 277px;
 height: 105px;
 display: flex;
-margin: -3px;
 background-color: white;
 border-radius: 20px;
-padding: -14px 6px 12px px;
 box-shadow: 0px 0px 6px 0px #0000002e;
 align-items: stretch;
-font-size: -6.9em;
+
 margin-top: 50px;
 
 }
@@ -1808,19 +2491,22 @@ object-fit: cover;
 width: 40%;
 height: 92%;
 margin: 5px;
-border-radius: 10px 0 0 15x;
 max-height: 100px;
 border-radius: 15px 0 0 15px;
       
 }
 
+.etoile_populaire{
+color: #0065FC;
+margin-left: auto;
+margin-top: 34px;
+}
 
 h2  {
 
 font-size: 19px;
 font-family: 'Raleway';
 font-weight: 800;
-
 }
 
 p {
@@ -1828,10 +2514,8 @@ p {
 font-size: 0.8em;
 font-family: 'Raleway';
 font-weight: 800;
-
 }
  
-
 
 #sortie {
 
@@ -1839,7 +2523,6 @@ display: flex;
 align-content: stretch;
 justify-content: center;
 align-items: flex-start;
-
 }
 
 
@@ -1856,7 +2539,7 @@ margin: 3px;
 
 figure {
   
-  display: flex;
+display: flex;
 
 }
 
@@ -1865,13 +2548,12 @@ figure {
 object-fit: cover;
 width: 103%;
 height: 100%;
-margin: -2px;
 height: 84%;
 
 }
 
 .groupe_section {
-  
+  width: 100%;
   display: flex;
 }
 
@@ -1911,8 +2593,6 @@ flex-direction: column;
 align-items: flex-start;
 height: 190px;
 width: 276px;
-margin-left: -32px;
-padding-bottom: -32px;
 margin-top: 2px;
 border-radius: 16px;
 box-shadow: 1px 1px 17px -9px;
@@ -1927,7 +2607,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 width: 276px;
-padding-bottom: -32px;
 border-radius: 16px;
 box-shadow: 1px 1px 17px -9px;
 background: white;
@@ -1941,7 +2620,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 width: 276px;
-padding-bottom: -32px;
 border-radius: 16px;
 box-shadow: 1px 1px 17px -9px;
 background: white;
@@ -1956,8 +2634,6 @@ flex-direction: column;
 align-items: flex-start;
 height: 166px;
 width: 276px;
-margin-left: -358px;
-padding-bottom: -32px;
 border-radius: 16px;
 box-shadow: 1px 1px 17px -9px;
 background: white;
@@ -1971,7 +2647,7 @@ display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: flex-end;
-width: 26%;
+
     
 }
 
@@ -2002,6 +2678,6 @@ p  {
 font-family:'Raleway';
 font-weight: 500;
 
-}*/
+}
 
-
+}
