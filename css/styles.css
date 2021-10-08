@@ -103,6 +103,7 @@
 	#conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
 	input[type="submit"] {
 		display: none;
+    
 	}
 	input[type="text"] {
 		padding: 0 0 0 20px;
@@ -111,6 +112,9 @@
 		border: none;
 		border-top: solid 1px #F2F2F2;
 		border-bottom: solid 1px #F2F2F2;
+    
+    
+    
 	}
 	.icon_maps {
 		display: flex;
@@ -138,6 +142,7 @@
 		padding: 15px;
 		width: 20px;
 		border: 0px;
+    cursor: pointer;
 	}
 	#filtres {
 		font-family: 'raleway';
@@ -170,6 +175,7 @@
 		padding: 18px;
 		margin: 5px;
 		position: relative;
+    cursor: pointer;
 	}
 	#logo-info {
 		/* icone info*/
@@ -246,7 +252,7 @@ margin: 0px;*/
 		max-height: 133px;
 	}
 	figcaption {
-		height: 57px;
+	    margin: 6px;
 		font-family: 'Raleway';
 		font-weight: 800;
 		font-style: normal;
@@ -269,6 +275,12 @@ margin: 0px;*/
 		font-size: 20px;
 		order: 1;
 	}
+	.fig_populaire { /*class pour mettre les etoile vers le bas */
+		margin: 1px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	 }
 	.etoile_populaire {
 		color: #0065FC;
 		padding-top: 30%;
@@ -470,7 +482,7 @@ margin: 0px;*/
 		padding: 10px;
 		color: #0065FC;
 		border-bottom: 3px solid #0065fc;
-    cursor: pointer;
+        cursor: pointer;
 	}
 	#nav_activite a {
 		color: black;
@@ -481,12 +493,13 @@ margin: 0px;*/
 		top: 10px;
 		right: 10px;
 	}
-	#nav_activite a:hover/*Apparence au survol des liens */
-	{
+	#nav_activite a:hover { /*Apparence au survol des liens */
 		text-decoration: none;
 		border-top: 0;
 		padding: 10px;
 		color: #0065FC;
+		border-bottom: 3px solid #0065fc;
+        cursor: pointer;
 	}
 	h2 {
 		font-family: 'Raleway', sans-serif;
@@ -516,7 +529,8 @@ margin: 0px;*/
 	#conteneur/* concerne icon maps avec marseille dans cadre et rechercher submit*/
 	input[type="submit"] {
 		display: none;
-	}
+    cursor: pointer;
+  }
 	input[type="text"] {
 		padding: 0 0 0 20px;
 		height: 50px;
@@ -524,6 +538,7 @@ margin: 0px;*/
 		border: none;
 		border-top: solid 1px #F2F2F2;
 		border-bottom: solid 1px #F2F2F2;
+    
 	}
 	.icon_maps {
 		display: flex;
@@ -543,7 +558,6 @@ margin: 0px;*/
 	.icon_maps_loupe {
 		display: block;
 		position: relative;
-		left: -15px;
 		background: #0065fc;
 		color: #deebff;
 		border-radius: 10px 10px 10px 10px;
@@ -551,6 +565,7 @@ margin: 0px;*/
 		padding: 15px;
 		width: 20px;
 		border: 0px;
+		cursor: pointer;
 	}
 	#filtres {
 		font-family: 'raleway';
@@ -583,6 +598,7 @@ margin: 0px;*/
 		padding: 18px;
 		margin: 5px;
 		position: relative;
+    cursor: pointer;
 	}
 	#logo-info {
 		/* icone info*/
@@ -657,7 +673,7 @@ margin: 0px;*/
 		max-height: 133px;
 	}
 	figcaption {
-		height: 57px;
+		margin: 6px;
 		font-family: 'Raleway';
 		font-weight: 800;
 		font-style: normal;
@@ -681,6 +697,12 @@ margin: 0px;*/
 		font-size: 20px;
 		margin-left: 15px;
 	}
+	.fig_populaire { /*class pour mettre les etoile vers le bas */
+		margin: 4px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	 }
 	.etoile_populaire {
 		color: #0065FC;
 		padding-top: 30%;
@@ -878,6 +900,7 @@ width: 26%;*/
 	}
 	#nav_heb a {
 		color: #0065FC;
+		border-top: 3px solid #0065FC;
 	}
 	#nav_heb a:hover {
 		text-decoration: none;
@@ -891,7 +914,7 @@ width: 26%;*/
 	#nav_ins a {
 		color: #0065FC;
 	}
-	#nav_activite a:hover Apparence au survol des liens {
+	#nav_activite a:hover { /*Apparence au survol des liens */
 		text-decoration: none;
 		border-top: 3px solid #0065FC;
 		padding: 10px;
@@ -931,6 +954,7 @@ width: 26%;*/
 		border: 0;
 		border-top-right-radius: 11px;
 		border-bottom-right-radius: 7px;
+    cursor: pointer;
 	}
 	input[type="text"] {
 		padding: 0 0 0 20px;
@@ -964,6 +988,7 @@ width: 26%;*/
 		margin-bottom: 40px;
 		margin-top: 50px;
 		font-weight: 800;
+    
 	}
 	.logo-button {
 		/*correspond a mes icons animaux romance ect..*/
@@ -984,6 +1009,8 @@ width: 26%;*/
 		border-radius: 100px;
 		padding: 18px;
 		margin: 5px;
+    cursor: pointer;
+    
 	}
 	#logo-info {
 		/* icone info*/
@@ -1058,6 +1085,11 @@ width: 26%;*/
 		width: 166px;
 		height: 72px;
 		max-height: 72px;
+	}
+	.hebergement-item:hover {
+		/* s'aggrandi quand on passe la souris dessus*/
+		cursor: pointer;
+		transform: scale(1.1);
 	}
 	figcaption {
 		/*height: 57px;*/
