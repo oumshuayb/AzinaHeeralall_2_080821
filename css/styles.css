@@ -212,7 +212,7 @@ margin: 0px;*/
 		padding: 14px;
 		display: flex;
 		flex-wrap: wrap;
-		width: 110%;
+		/*width: 110%;*/
 		order: 2;
 	}
 	.nuit {
