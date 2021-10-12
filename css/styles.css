@@ -44,7 +44,7 @@
 		font-weight: 500;
 		text-decoration: none;
 	}
-	.navigation3 {
+	.navigation3 { /* concerne heb activite et sinscrire*/
 		justify-content: space-around;
 		display: flex;
 		border-bottom: 3px solid #F2F2F2;
@@ -52,7 +52,7 @@
 	#nav_heb a {
 		color: #0065FC;
 	}
-	#nav_heb a:hover {
+	#nav_heb a:hover { /* trait au dessu de hebergement*/
 		text-decoration: none;
 		border-top: 0;
 		padding: 10px;
@@ -80,7 +80,7 @@
 		font-weight: 500;
 		font-size: 1em;
 	}
-	.fas fa-map-marker-alt/*concerne icone maps , quel denomination pour changer la fond de maps */
+	.fas fa-map-marker-alt/*concerne icone maps */
 	{
 		background-size: 20px;
 		background-color: #F2F2F2;
@@ -131,8 +131,8 @@
 		margin-top: 15px;
 		margin-bottom: 35px;
 	}
-	.icon_maps_loupe {
-		display: block;
+	.icon_maps_loupe { /*icone loupe responsive*/
+		/*display: block;*/
 		position: relative;
 		left: -15px;
 		background: #0065fc;
@@ -160,12 +160,12 @@
 		margin-right: 15px;
 		margin-left: -18px;
 	}
-	.filtre-items {
+	.filtre-items { /*div contenant mes bouton filtre*/
 		display: flex;
 		flex-wrap: wrap;
 	}
 	.button-filtre {
-		/*iconn+texte*/
+		/*icone+texte*/
 		font-family: 'raleway';
 		font-weight: 800;
 		background-color: white;
@@ -184,7 +184,7 @@
 		font-weight: 300;
 		font-size: 0.8em;
 	}
-	.logo-item {
+	.logo-item { /*logo information*/
 		height: 2rem;
 		min-width: 2rem;
 		border: solid 1px #d9d9d9;
@@ -196,13 +196,13 @@
 		align-items: center;
 		margin: auto;
 	}
-	#bloc_page1 {
+	#bloc_page1 { /* concerne groupe herbergement et les plus pop*/
 		display: flex;
 		padding: 37px;
 		/*flex-direction: column-reverse;
 margin: 0px;*/
 	}
-	.groupe_section {
+	.groupe_section { /* hergement+ populaire*/
 		display: flex;
 		flex-direction: column;
 	}
@@ -215,7 +215,7 @@ margin: 0px;*/
 		/*width: 110%;*/
 		order: 2;
 	}
-	.nuit {
+	.nuit { /* nuit a partir de ..*/
 		font-family: 'raleway';
 		font-weight: 500;
 		margin-top: 5px;
@@ -251,7 +251,7 @@ margin: 0px;*/
 		/*width: 100%;*/
 		max-height: 133px;
 	}
-	figcaption {
+	figcaption { /* utiliser pour legender figure */
 	    margin: 6px;
 		font-family: 'Raleway';
 		font-weight: 800;
@@ -337,7 +337,7 @@ margin: 0px;*/
 		margin: -2px;
 		height: 84%;
 	}
-	.courbe {
+	.courbe { /* concerne icone */
 		display: flex;
 		flex-wrap: wrap;
 		align-content: stretch;
@@ -1036,7 +1036,7 @@ width: 26%;*/
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-content: stretch;
-		justify-content: flex-star;
+		
 	}
 	/*partie herbergement*/
 	#logement_marseille {
@@ -1065,7 +1065,7 @@ width: 26%;*/
 		height: 28%;
 		border-radius: 10px;
 		border: solid 5px white;
-		background: white;
+		/*background: white;*/
 	}
 	.hebergement-items {
 		display: flex;
