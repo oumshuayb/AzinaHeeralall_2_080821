@@ -1064,8 +1064,8 @@ width: 26%;*/
 		width: 24%;
 		height: 28%;
 		border-radius: 10px;
-		border: solid 5px white;
-		/*background: white;*/
+		border: solid 5px transparent;
+		background: white;
 	}
 	.hebergement-items {
 		display: flex;
