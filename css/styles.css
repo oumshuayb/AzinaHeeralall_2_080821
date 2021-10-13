@@ -183,6 +183,7 @@
 		font-family: "Raleway", sans-serif;
 		font-weight: 300;
 		font-size: 0.8em;
+		align-items: center;
 	}
 	.logo-item { /*logo information*/
 		height: 2rem;
@@ -194,7 +195,7 @@
 		font-size: small;
 		justify-content: center;
 		align-items: center;
-		margin: auto;
+		/*margin: auto;*/
 	}
 	#bloc_page1 { /* concerne groupe herbergement et les plus pop*/
 		display: flex;
@@ -210,7 +211,7 @@ margin: 0px;*/
 		box-shadow: 10px 10px 10px white;
 		border-radius: 20px;
 		padding: 14px;
-		display: flex;
+		/*display: flex;*/
 		flex-wrap: wrap;
 		/*width: 110%;*/
 		order: 2;
@@ -283,7 +284,7 @@ margin: 0px;*/
 	 }
 	.etoile_populaire {
 		color: #0065FC;
-		padding-top: 30%;
+		/*padding-top: 30%;*/
 	}
 	.populaire_items {
 		flex-direction: column;
@@ -895,7 +896,7 @@ width: 26%;*/
 		display: flex;
 		vertical-align: top;
 		align-items: flex-start;
-		margin-left: 676px;
+		/*margin-left: 676px;*/
 		font-size: 75px;
 	}
 	#nav_heb a {
@@ -978,7 +979,7 @@ width: 26%;*/
 		margin-top: 15px;
 		margin-bottom: 35px;
 	}
-	.icon_maps_loupe {
+	.icon_maps_loupe { /* pour le prendre en compte car sinon style de fa qui prend le dessus */
 		display: none !important;
 	}
 	#filtres {
@@ -1055,7 +1056,7 @@ width: 26%;*/
 		margin-top: 5px;
 	}
 	.hebergement-item {
-		width: 191px;
+		/*width: 191px;*/
 		margin: 9px;
 		display: flex;
 		overflow: hidden;
@@ -1202,8 +1203,8 @@ width: 26%;*/
 		margin-left:0px;
 	}
 	.vieux_port>img {
-		width: 255px;
-		height: 398px;
+		/*width: 255px;*/
+		height: 93%;
 	}
 	.activite_fort {
 		display: flex;
