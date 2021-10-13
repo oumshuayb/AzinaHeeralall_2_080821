@@ -51,11 +51,12 @@
 	}
 	#nav_heb a {
 		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
 	}
 	#nav_heb a:hover { /* trait au dessu de hebergement*/
 		text-decoration: none;
 		border-top: 0;
-		padding: 10px;
+		/*padding: 10px;*/
 		color: #0065FC;
 		border-bottom: 3px solid #0065fc;
 	}
@@ -72,8 +73,9 @@
 	{
 		text-decoration: none;
 		border-top: 0;
-		padding: 10px;
+		/*padding: 10px;*/
 		color: #0065FC;
+		border-bottom: 3px solid #0065FC;
 	}
 	h2 {
 		font-family: 'Raleway', sans-serif;
@@ -906,19 +908,21 @@ width: 26%;*/
 	#nav_heb a:hover {
 		text-decoration: none;
 		border-top: 3px solid #0065FC;
-		padding: 10px;
+		/*padding: 10px;*/
 		color: #0065FC;
 	}
 	#nav_activite a {
 		color: black;
+		border-top: 3px solid transparent;
 	}
 	#nav_ins a {
 		color: #0065FC;
+		border-top: 3px solid transparent; /*pour avoir la meme taille de mes elements dans ma div nav*/
 	}
 	#nav_activite a:hover { /*Apparence au survol des liens */
 		text-decoration: none;
 		border-top: 3px solid #0065FC;
-		padding: 10px;
+		/*padding: 10px;*/
 		color: #0065FC;
 	}
 	h2 {
@@ -1047,8 +1051,9 @@ width: 26%;*/
 		padding: 14px;
 		display: flex;
 		flex-wrap: wrap;
-		width: 110%;
+		/*width: 110%;*/
 		flex-direction: column;
+		min-width: 663px;
 	}
 	.nuit {
 		font-family: 'raleway';
@@ -1194,13 +1199,14 @@ width: 26%;*/
 	}
 	.vieux_port {
 		overflow: hidden;
-		height: 435px;
+		/*height: 435px;*/
 		border-radius: 20px;
 		box-shadow: 1px 1px 17px -9px;
 		display: flex;
 		flex-direction: column;
 		margin-top:0px;
 		margin-left:0px;
+		min-width: 235px;
 	}
 	.vieux_port>img {
 		/*width: 255px;*/
